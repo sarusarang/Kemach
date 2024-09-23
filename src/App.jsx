@@ -8,6 +8,7 @@ const Footer = lazy(() => import('./Components/Footer'))
 const Header = lazy(() => import('./Components/Header'))
 const Contact= lazy(() => import('./Pages/ContactUs'))
 const Locator= lazy(() => import('./Pages/Locator'))
+const SkidLoader= lazy(() => import('./Pages/SkidLoader'))
 
 
 
@@ -41,6 +42,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
 
           <Route path="/locator" element={<Locator />} />
+
+          <Route path="/skidloader" element={<SkidLoader />} />
 
         </Routes>
 
