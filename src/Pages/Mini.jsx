@@ -148,9 +148,12 @@ export default function Mini() {
 
                         <section class="fork-s2">
                             <div class="row seperation" data-aos="fade-up">
-                                <h1>Attachments</h1>
+                                <h1 className='mb-0'>Attachments</h1>
                             </div>
                         </section>
+
+
+
                         <section class="fork-s1">
                             <div class="row row2 gx-4 gx-lg-3 row-cols-1 row-cols-sm-2 row-cols-xl-6 justify-content-center ">
                                 <div class="col mb-3">

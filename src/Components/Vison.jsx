@@ -84,7 +84,7 @@ function Vison() {
                                 </div>
                                 <div className="inner-2">
                                     <i className="fa-solid fa-truck-ramp-box"></i>
-                                    <p>Equipment Delivered</p>
+                                    <p className='mb-0'>Equipment Delivered</p>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +100,7 @@ function Vison() {
                                 </div>
                                 <div className="inner-2">
                                     <i className="fa-regular fa-face-smile"></i>
-                                    <p>Happy Customers</p>
+                                    <p className='mb-0'>Happy Customers</p>
                                 </div>
                             </div>
                         </div>
@@ -116,7 +116,7 @@ function Vison() {
                                 </div>
                                 <div className="inner-2">
                                     <i className="fa-solid fa-users"></i>
-                                    <p>Employees</p>
+                                    <p className='mb-0'>Employees</p>
                                 </div>
                             </div>
                         </div>

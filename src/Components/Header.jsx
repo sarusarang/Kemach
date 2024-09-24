@@ -16,7 +16,7 @@ function Header() {
 
                     <div className="left-side">
 
-                        <ul className='mb-0'>
+                        <ul className='mb-0 p-0'>
                             <li>
                                 <a href="https://wa.me/+919778412529" target='_blank'><i className="fa-solid fa-mobile"></i>+91 9778412529</a>
                             </li>
@@ -88,7 +88,7 @@ function Header() {
 
                                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
 
-                                        <li><Link to={'/skidloader'} className="dropdown-item" >Skid-Steer Loaders</Link></li>
+                                        <li><Link to={'/mini'} className="dropdown-item" >Skid-Steer Loaders</Link></li>
                                         <li><Link to={'/mini'} className="dropdown-item" >Mini Excavators</Link></li>
                                         <li><Link to={'/mini'} className="dropdown-item" >Backhoe Loaders</Link></li>
                                         <li><Link to={'/mini'} className="dropdown-item" >Rock Breakers </Link></li>
@@ -103,7 +103,7 @@ function Header() {
 
 
                                 <li className="nav-item">
-                                    <Link className="nav-link" to={'/locator'} >Distributor
+                                    <Link className="nav-link" to={'/locator'} >Store
                                         Location</Link>
                                 </li>
 

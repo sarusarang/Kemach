@@ -109,6 +109,13 @@ li {
     font-size: 10px;
   }
 
+  .top-header .sub-div .left-side ul,
+.top-header .sub-div .right-side ul {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+
 }
 
 .top-header {
@@ -663,7 +670,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 15vh;
+    min-height: 12vh;
     text-align: center;
     color: white;
     background-color: #c3191c;
