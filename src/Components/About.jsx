@@ -57,48 +57,115 @@ function About() {
                     <div className="row gx-4 gx-lg-3 row-cols-1 row-cols-sm-3 row-cols-xl-3 justify-content-center container">
 
 
-                        {
 
-                            Array.from({ length: 3 }).map((item, index) => (
+                        <div className="col mb-5">
 
-                                <div className="col mb-5" key={index}>
-                                    <div className="card" data-aos="fade-up">
-                                        <Carousel id="carouselExampleIndicatorsCard1" interval={3000} controls={false} indicators={true}>
+                            <div className="card" data-aos="fade-up">
+                                <Carousel id="carouselExampleIndicatorsCard1" interval={3000} controls={false} indicators={true}>
 
-                                            <Carousel.Item>
-                                                <img src="/sam1.jpg" loading="lazy" className="d-block w-100" alt="First slide" />
-                                                <Carousel.Caption>
-                                                    <h5>First Slide Label</h5>
-                                                    <p>This is the first slide description.</p>
-                                                </Carousel.Caption>
-                                            </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img src="/sam1.jpg" loading="lazy" className="d-block w-100" alt="First slide" />
+                                        <Carousel.Caption>
+                                            <h5>Skid-Steer Loaders</h5>
 
-                                            <Carousel.Item>
-                                                <img src="/sam2.jpg" loading="lazy" className="d-block w-100" alt="Second slide" />
-                                                <Carousel.Caption>
-                                                    <h5>Second Slide Label</h5>
-                                                    <p>This is the second slide description.</p>
-                                                </Carousel.Caption>
-                                            </Carousel.Item>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
 
-                                            <Carousel.Item>
-                                                <img src="/sam3.jpg" loading="lazy" className="d-block w-100" alt="Third slide" />
-                                                <Carousel.Caption>
-                                                    <h5>Third Slide Label</h5>
-                                                    <p>This is the third slide description.</p>
-                                                </Carousel.Caption>
-                                            </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img src="/sam2.jpg" loading="lazy" className="d-block w-100" alt="Second slide" />
+                                        <Carousel.Caption>
+                                            <h5>Skid-Steer Loaders</h5>
 
-                                            
-                                        </Carousel>
-                                    </div>
-                                </div>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+
+                                    <Carousel.Item>
+                                        <img src="/sam3.jpg" loading="lazy" className="d-block w-100" alt="Third slide" />
+                                        <Carousel.Caption>
+                                            <h5>Skid-Steer Loaders</h5>
+
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+
+
+                                </Carousel>
+                            </div>
+                        </div>
 
 
 
-                            ))
+                        <div className="col mb-5">
 
-                        }
+                            <div className="card" data-aos="fade-up">
+                                <Carousel id="carouselExampleIndicatorsCard1" interval={3000} controls={false} indicators={true}>
+
+                                    <Carousel.Item>
+                                        <img src="/sam1.jpg" loading="lazy" className="d-block w-100" alt="First slide" />
+                                        <Carousel.Caption>
+                                            <h5>Mini Excavators</h5>
+
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+
+                                    <Carousel.Item>
+                                        <img src="/sam2.jpg" loading="lazy" className="d-block w-100" alt="Second slide" />
+                                        <Carousel.Caption>
+                                            <h5>Mini Excavators</h5>
+
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+
+                                    <Carousel.Item>
+                                        <img src="/sam3.jpg" loading="lazy" className="d-block w-100" alt="Third slide" />
+                                        <Carousel.Caption>
+                                            <h5>Mini Excavators</h5>
+
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+
+
+                                </Carousel>
+                            </div>
+                        </div>
+
+
+
+                        <div className="col mb-5">
+
+                            <div className="card" data-aos="fade-up">
+                                <Carousel id="carouselExampleIndicatorsCard1" interval={3000} controls={false} indicators={true}>
+
+                                    <Carousel.Item>
+                                        <img src="/sam1.jpg" loading="lazy" className="d-block w-100" alt="First slide" />
+                                        <Carousel.Caption>
+                                            <h5>Hydraulic Attachments & Drill Bits</h5>
+
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+
+                                    <Carousel.Item>
+                                        <img src="/sam2.jpg" loading="lazy" className="d-block w-100" alt="Second slide" />
+                                        <Carousel.Caption>
+                                            <h5>Hydraulic Attachments & Drill Bits</h5>
+
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+
+                                    <Carousel.Item>
+                                        <img src="/sam3.jpg" loading="lazy" className="d-block w-100" alt="Third slide" />
+                                        <Carousel.Caption>
+                                            <h5>Hydraulic Attachments & Drill Bits</h5>
+
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+
+
+                                </Carousel>
+                            </div>
+                        </div>
+
+
+
 
 
                     </div>

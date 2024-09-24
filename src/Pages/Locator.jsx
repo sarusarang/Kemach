@@ -156,7 +156,7 @@ function Locator() {
                                     Unleash the power and value of the 9 Series forklifts designed for productivity and user safety. These
                                     forklifts exceed expectations.
                                 </p>
-                                <a href="#" target='_blank' className=" d-flex justify-content-start align-items-center text-danger text-decoration-none">Learn More <i
+                                <a href="#" target='_blank' className=" d-flex justify-content-start align-items-center btn btn-learn">Learn More <i
                                     className="fa-solid ps-1 fa-right-long"></i></a>
                             </div>
 
@@ -176,7 +176,7 @@ function Locator() {
                                     Unleash the power and value of the 9 Series forklifts designed for productivity and user safety. These
                                     forklifts exceed expectations.
                                 </p>
-                                <a href="#" target='_blank' className=" d-flex justify-content-start align-items-center text-danger text-decoration-none">Learn More <i
+                                <a href="#" target='_blank' className=" d-flex justify-content-start align-items-center btn btn-learn">Learn More <i
                                     className="fa-solid ps-1 fa-right-long"></i></a>
                             </div>
                         </div>
@@ -194,7 +194,7 @@ function Locator() {
                                     Unleash the power and value of the 9 Series forklifts designed for productivity and user safety. These
                                     forklifts exceed expectations.
                                 </p>
-                                <a href="#" target='_blank' className=" d-flex justify-content-start align-items-center text-danger text-decoration-none ">Learn More <i
+                                <a href="#" target='_blank' className=" d-flex justify-content-start align-items-center btn btn-learn">Learn More <i
                                     className="fa-solid ps-1 fa-right-long"></i></a>
                             </div>
                         </div>
@@ -213,7 +213,7 @@ function Locator() {
                                     Unleash the power and value of the 9 Series forklifts designed for productivity and user safety. These
                                     forklifts exceed expectations.
                                 </p>
-                                <a href="#" target='_blank' className=" d-flex justify-content-start align-items-center text-danger text-decoration-none">Learn More <i
+                                <a href="#" target='_blank' className=" d-flex justify-content-start align-items-center btn btn-learn">Learn More <i
                                     className="fa-solid ps-1 fa-right-long"></i></a>
                             </div>
                         </div>
@@ -231,7 +231,7 @@ function Locator() {
                                     Unleash the power and value of the 9 Series forklifts designed for productivity and user safety. These
                                     forklifts exceed expectations.
                                 </p>
-                                <a href="#" target='_blank' className=" d-flex justify-content-start align-items-center text-danger text-decoration-none">Learn More <i
+                                <a href="#" target='_blank' className=" d-flex justify-content-start align-items-center btn btn-learn">Learn More <i
                                     className="fa-solid ps-1 fa-right-long"></i></a>
                             </div>
                         </div>
@@ -249,7 +249,7 @@ function Locator() {
                                     Unleash the power and value of the 9 Series forklifts designed for productivity and user safety. These
                                     forklifts exceed expectations.
                                 </p>
-                                <a href="#" target='_blank' className=" d-flex justify-content-start align-items-center text-danger text-decoration-none">Learn More <i
+                                <a href="#" target='_blank' className=" d-flex justify-content-start align-items-center btn btn-learn">Learn More <i
                                     className="fa-solid ps-1 fa-right-long"></i></a>
                             </div>
                         </div>
@@ -269,7 +269,7 @@ function Locator() {
                                     Unleash the power and value of the 9 Series forklifts designed for productivity and user safety. These
                                     forklifts exceed expectations.
                                 </p>
-                                <a href="#" target='_blank' className=" d-flex justify-content-start align-items-center text-danger text-decoration-none">Learn More <i
+                                <a href="#" target='_blank' className=" d-flex justify-content-start align-items-center btn btn-learn">Learn More <i
                                     className="fa-solid ps-1 fa-right-long"></i></a>
                             </div>
 

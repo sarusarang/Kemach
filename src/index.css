@@ -110,11 +110,11 @@ li {
   }
 
   .top-header .sub-div .left-side ul,
-.top-header .sub-div .right-side ul {
-  display: flex;
-  list-style: none;
-  gap: 5px;
-}
+  .top-header .sub-div .right-side ul {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+  }
 
 }
 
@@ -240,7 +240,23 @@ li {
 .s3 .box {
   width: 50%;
   aspect-ratio: 1/1;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.s3 .box img {
+  width: 50%;
+}
+
+.s3 .box p {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: none;
 }
 
 @media (max-width:768px) {
@@ -1324,4 +1340,26 @@ li {
   width: 100%;
   background-color: #c3191c;
   margin-bottom: 2rem;
+}
+
+
+/* learn more btn */
+.btn-learn {
+
+  text-decoration: none !important;
+  font-size: 15px !important;
+  color: #c3191c !important;
+  border: 1px solid #c3191c !important;
+  width: fit-content !important;
+  margin-top: 1rem !important;
+  transition: all ease-in-out 0.5s !important;
+
+
+}
+
+.btn-learn:hover{
+
+  background-color: #c3191c !important; 
+  color: #fff !important;
+
 }

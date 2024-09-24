@@ -33,10 +33,18 @@ function MostUsed() {
 
 
                             <div className="box">
-                                <img src="" alt="slide-img" loading='lazy' />
+
+                                <p>Book a Test Operation</p>
+                                <img src="/testdrive.png" alt="slide-img" loading='lazy' />
+
                             </div>
+
+
                             <div className="box">
-                                <img src="" alt="slide-img" loading='lazy' />
+
+                                <p>Service Appointment</p>
+                                <img src="/service.png" alt="slide-img" loading='lazy' />
+
                             </div>
 
 
@@ -72,29 +80,65 @@ function MostUsed() {
 
 
                         <div className="col mb-3">
+
                             <Link ><div className="card" data-aos="fade-up">
+
                                 <img src="/bi1.jpg" loading='lazy' alt="slide-img" />
+
+                                <div class="card-img-overlay d-flex align-items-end mb-3 justify-content-center">
+                                    <h4 class="card-title fw-bolder text-white ">Skid-Steer Loaders</h4>
+                                </div>
+
                             </div></Link>
+
+
                         </div>
 
 
                         <div className="col mb-3">
+
                             <Link ><div className="card" data-aos="fade-down">
+
                                 <img src="/bi2.jpg" loading='lazy' alt="slide-img" />
+
+                                <div class="card-img-overlay d-flex align-items-end mb-3 justify-content-center">
+                                    <h4 class="card-title fw-bolder text-white">Mini Excavators</h4>
+                                </div>
+
                             </div></Link>
+
+
                         </div>
 
 
                         <div className="col mb-3">
+
                             <Link ><div className="card" data-aos="fade-up">
+
                                 <img src="/bi3.jpg" loading='lazy' alt="slide-img" />
+
+                                <div class="card-img-overlay d-flex align-items-end mb-3 justify-content-center">
+                                    <h4 class="card-title fw-bolder text-white ">Backhoe Loaders</h4>
+                                </div>
+
                             </div></Link>
+
+
                         </div>
 
                         <div className="col mb-3">
+
                             <Link ><div className="card" data-aos="fade-down">
+
                                 <img src="/bi4.jpg" loading='lazy' alt="slide-img" />
+
+                                <div class="card-img-overlay d-flex align-items-end mb-3 justify-content-center">
+                                    <h4 class="card-title text-white fw-bolder ">Hydraulic Attachments & Drill Bits</h4>
+                                </div>
+
                             </div></Link>
+
+
                         </div>
 
 
@@ -132,7 +176,7 @@ function MostUsed() {
                             industry and a valuable asset to any enterprise.
                         </p>
                     </div>
-                    
+
                 </section>
 
 
