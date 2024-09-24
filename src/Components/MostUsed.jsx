@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 function MostUsed() {
 
@@ -13,6 +13,8 @@ function MostUsed() {
 
     }, [])
 
+
+    const Navigate = useNavigate()
 
 
     return (
@@ -32,7 +34,7 @@ function MostUsed() {
                         <div className="col-md-6 items-col d-flex justify-content-center align-items-center ">
 
 
-                            <div className="box">
+                            <div className="box" onClick={()=>{Navigate('/enquiry')}} style={{cursor:'pointer'}}>
 
                                 <p>Book a Test Operation</p>
                                 <img src="/testdrive.png" alt="slide-img" loading='lazy' />

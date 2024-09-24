@@ -1357,9 +1357,75 @@ li {
 
 }
 
-.btn-learn:hover{
+.btn-learn:hover {
 
-  background-color: #c3191c !important; 
+  background-color: #c3191c !important;
   color: #fff !important;
 
+}
+
+
+
+/* Enquiry form */
+
+#Enquiry .form-div form label {
+  font-size: 14px;
+}
+
+#Enquiry .form-div form label:after {
+  content: "*";
+  color: red;
+}
+
+#Enquiry .form-div form .form-control {
+  border: 0;
+  border-bottom: 1px solid #c3191c;
+  border-radius: 0px;
+}
+
+#Enquiry .form-div form .form-control:focus {
+  box-shadow: none;
+}
+
+#Enquiry .form-div form .form-select {
+  border-radius: 0;
+  border: 1px solid #c3191c;
+}
+
+#Enquiry .form-div form .form-select:focus {
+  box-shadow: none;
+}
+
+#Enquiry .form-div form .sbtn {
+  border: 1px solid #c3191c;
+  /* background-color: #c3191c;
+  color: white; */
+  background-color: white;
+  color: #c3191c;
+  font-size: 16px;
+  font-weight: 600;
+  width: fit-content;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#Enquiry .form-div form .sbtn:hover {
+  background-color: #c3191c;
+  color: white;
+}
+
+.rock-seperation h4 {
+  text-align: center;
+  /* margin-top: 1rem; */
+}
+
+.rock-seperation h4::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #c3191c;
+  margin: 0 auto;
+  margin-top: 15px;
 }

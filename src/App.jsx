@@ -9,6 +9,9 @@ const Header = lazy(() => import('./Components/Header'))
 const Contact= lazy(() => import('./Pages/ContactUs'))
 const Locator= lazy(() => import('./Pages/Locator'))
 const Mini= lazy(() => import('./Pages/Mini'))
+const DrillsBits= lazy(() => import('./Pages/DrillsBits'))
+const RockBeaker= lazy(() => import('./Pages/RockBeaker'))
+const Enquiry= lazy(() => import('./Pages/Enquiry'))
 
 
 
@@ -44,6 +47,12 @@ function App() {
           <Route path="/locator" element={<Locator />} />
 
           <Route path="/mini" element={<Mini />} />
+
+          <Route path="/drills" element={<DrillsBits />} />
+
+          <Route path="/rock" element={<RockBeaker />} />
+
+          <Route path="/enquiry" element={<Enquiry />} />
 
         </Routes>
 
