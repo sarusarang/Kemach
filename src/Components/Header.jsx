@@ -94,7 +94,7 @@ function Header() {
                                         <li><Link to={'/rock'} className="dropdown-item" >Rock Breakers </Link></li>
                                         <li><Link to={'/drills'} className="dropdown-item" >Hydraulic Attachments & Drill Bits</Link></li>
                                         <li><Link to={'/mini'} className="dropdown-item" >Electric Compressors</Link></li>
-                                        <li><Link to={'/mini'} className="dropdown-item" >Service & Parts </Link></li>
+                                        <li><Link to={'/service'} className="dropdown-item" >Service & Parts </Link></li>
 
                                     </ul>
 

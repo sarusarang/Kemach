@@ -686,7 +686,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 12vh;
+    min-height: 9vh;
     text-align: center;
     color: white;
     background-color: #c3191c;

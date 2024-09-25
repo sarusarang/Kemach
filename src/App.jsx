@@ -12,6 +12,8 @@ const Mini= lazy(() => import('./Pages/Mini'))
 const DrillsBits= lazy(() => import('./Pages/DrillsBits'))
 const RockBeaker= lazy(() => import('./Pages/RockBeaker'))
 const Enquiry= lazy(() => import('./Pages/Enquiry'))
+const Service= lazy(() => import('./Pages/Service'))
+const SingleProduct= lazy(() => import('./Pages/SingleProduct'))
 
 
 
@@ -53,6 +55,10 @@ function App() {
           <Route path="/rock" element={<RockBeaker />} />
 
           <Route path="/enquiry" element={<Enquiry />} />
+
+          <Route path="/service" element={<Service />} />
+
+          <Route path="/pro/:id" element={<SingleProduct />} />
 
         </Routes>
 

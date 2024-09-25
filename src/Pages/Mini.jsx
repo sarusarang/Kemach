@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { Link } from 'react-router-dom'
 
 export default function Mini() {
 
@@ -45,9 +46,11 @@ export default function Mini() {
 
 
                         <div class="col-md-12">
+
                             <div class="row row2 gx-4 gx-lg-3 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center ">
                                 <div class="col mb-3">
-                                    <a href="singleproduct.html" class="text-decoration-none ">
+
+                                    <Link to={'/pro/1'} class="text-decoration-none ">
                                         <div class="card h-100" data-aos="fade-down">
                                             <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1670594325/bobcat-assets/alao-approved/in/products/excavators/models/e20z/20221209-in-e20z-studio"
                                                 class="img-fluid" alt="..." />
@@ -69,10 +72,13 @@ export default function Mini() {
 
 
                                         </div>
-                                    </a>
+                                    </Link>
+
                                 </div>
+
+
                                 <div class="col mb-3">
-                                    <a href="singleproduct.html" class="text-decoration-none ">
+                                    <Link to={'/pro/1'}  class="text-decoration-none ">
                                         <div class="card h-100" data-aos="fade-down">
                                             <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1670594356/bobcat-assets/alao-approved/in/products/excavators/models/e27/20221209-in-e27-studio"
                                                 class="img-fluid" alt="..." />
@@ -88,10 +94,10 @@ export default function Mini() {
                                                     class="fa-solid ps-1 fa-right-long"></i></a>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="col mb-3">
-                                    <a href="singleproduct.html" class="text-decoration-none ">
+                                    <Link to={'/pro/1'}  class="text-decoration-none ">
                                         <div class="card h-100" data-aos="fade-down">
                                             <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1672332149/bobcat-assets/alao-approved/in/products/excavators/models/e30/20221229-bobcat-in-e30-studio"
                                                 class="img-fluid" alt="..." />
@@ -107,10 +113,10 @@ export default function Mini() {
                                                     class="fa-solid ps-1 fa-right-long"></i></a>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="col mb-3">
-                                    <a href="singleproduct.html" class="text-decoration-none ">
+                                    <Link to={'/pro/1'}  class="text-decoration-none ">
                                         <div class="card h-100" data-aos="fade-down">
                                             <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1672332157/bobcat-assets/alao-approved/in/products/excavators/models/e37ultra/20221229-bobcat-in-e37-ultra-studio"
                                                 class="img-fluid" alt="..." />
@@ -126,10 +132,10 @@ export default function Mini() {
                                                     class="fa-solid ps-1 fa-right-long"></i></a>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="col mb-3">
-                                    <a href="singleproduct.html" class="text-decoration-none ">
+                                    <Link to={'/pro/1'}  class="text-decoration-none ">
                                         <div class="card h-100" data-aos="fade-down">
                                             <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1676466650/bobcat-assets/alao-approved/in/products/excavators/models/e37xtra/20230215-bobcat-alao-in-e37-xtra-hd"
                                                 class="img-fluid" alt="..." />
@@ -145,7 +151,7 @@ export default function Mini() {
                                                     class="fa-solid ps-1 fa-right-long"></i></a>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
 
