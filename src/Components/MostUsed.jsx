@@ -42,7 +42,7 @@ function MostUsed() {
                             </div>
 
 
-                            <div className="box">
+                            <div className="box" onClick={()=>{Navigate('/book')}} style={{cursor:'pointer'}}>
 
                                 <p>Service Appointment</p>
                                 <img src="/service.png" alt="slide-img" loading='lazy' />

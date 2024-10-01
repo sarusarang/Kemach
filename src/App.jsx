@@ -14,6 +14,7 @@ const RockBeaker= lazy(() => import('./Pages/RockBeaker'))
 const Enquiry= lazy(() => import('./Pages/Enquiry'))
 const Service= lazy(() => import('./Pages/Service'))
 const SingleProduct= lazy(() => import('./Pages/SingleProduct'))
+const Booking= lazy(() => import('./Pages/Booking'))
 
 
 
@@ -59,6 +60,8 @@ function App() {
           <Route path="/service" element={<Service />} />
 
           <Route path="/pro/:id" element={<SingleProduct />} />
+
+          <Route path="/book" element={<Booking />} />
 
         </Routes>
 
