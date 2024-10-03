@@ -15,6 +15,8 @@ const Enquiry= lazy(() => import('./Pages/Enquiry'))
 const Service= lazy(() => import('./Pages/Service'))
 const SingleProduct= lazy(() => import('./Pages/SingleProduct'))
 const Booking= lazy(() => import('./Pages/Booking'))
+const Terms= lazy(() => import('./Pages/Terms'))
+const Policy= lazy(() => import('./Pages/Policy'))
 
 
 
@@ -62,6 +64,11 @@ function App() {
           <Route path="/pro/:id" element={<SingleProduct />} />
 
           <Route path="/book" element={<Booking />} />
+
+          <Route path="/terms" element={<Terms />} />
+
+          <Route path="/policy" element={<Policy />} />
+
 
         </Routes>
 

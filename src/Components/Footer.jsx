@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer() {
 
@@ -87,8 +88,8 @@ function Footer() {
 
                     <p className='mb-0'>@2024 Copyright</p>
 
-                    <p className='mb-0'><a>Terms & Conditions</a><span> I </span><a>Privacy
-                        Policy</a></p>
+                    <p className='mb-0'><Link to={'/terms'}>Terms & Conditions</Link><span> I </span><Link to={'/policy'}>Privacy
+                        Policy</Link></p>
 
                     <p className='mb-2'>Powered by : <a href="https://exmedia.in" target='_blank' className="ex">exmedia.in </a></p>
 
