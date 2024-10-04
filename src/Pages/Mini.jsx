@@ -15,6 +15,9 @@ export default function Mini() {
     const [ProductData, SetProductData] = useState([])
 
 
+    console.log(data);
+    
+
 
 
     useEffect(() => {
