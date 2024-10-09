@@ -75,10 +75,7 @@ function HomeSlider() {
 
                                             </div>
 
-                                            <Carousel.Caption style={{ top: '20%', position: 'absolute', left: '0%' , right:'1%'}}>
-                                                <h3>{Item.caption}</h3> {/* Title for the caption */}
-                                                
-                                            </Carousel.Caption>
+                                           
 
                                         </Col>
 

@@ -85,7 +85,7 @@ function Vison() {
                             <div className="content-inner">
                                 <div className="d-flex">
                                     <h4 id="count1" className="pe-2">
-                                        {inView1 ? <CountUp start={0} end={3401} duration={4} /> : '0'}
+                                        {inView1 ? <CountUp start={0} end={2300} duration={4} /> : '0'}
                                     </h4>
                                     <span><i className="fa-solid fa-plus "></i></span>
                                 </div>
@@ -101,7 +101,7 @@ function Vison() {
                             <div className="content-inner">
                                 <div className="d-flex">
                                     <h4 id="count2" className="pe-2">
-                                        {inView2 ? <CountUp start={0} end={15000} duration={4} /> : '0'}
+                                        {inView2 ? <CountUp start={0} end={6200} duration={4} /> : '0'}
                                     </h4>
                                     <span><i className="fa-solid fa-plus "></i></span>
                                 </div>
@@ -117,7 +117,7 @@ function Vison() {
                             <div className="content-inner">
                                 <div className="d-flex">
                                     <h4 id="count3" className="pe-2">
-                                        {inView3 ? <CountUp start={0} end={750} duration={4} /> : '0'}
+                                        {inView3 ? <CountUp start={0} end={40} duration={4} /> : '0'}
                                     </h4>
                                     <span><i className="fa-solid fa-plus "></i></span>
                                 </div>

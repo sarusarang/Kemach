@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect,useState } from 'react'
+import { useEffect, useState } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Carousel from "react-multi-carousel"
@@ -185,19 +185,24 @@ function SingleProduct() {
 
                         {/* Product Description */}
                         <div className="col-md-6 right" data-aos="zoom-in">
+
                             <h1>S70 Skid-Steer Loader</h1>
                             <p>
                                 The Bobcat® S70 skid-steer loader is small enough to get in the tight spots, yet tough enough to get you out. This agile little workhorse is only 6 ft. tall and 3 ft. wide — the ideal size for quickly moving through narrow doorways, corridors, aisles, alleys and gates, and for working under low ceilings. It's the perfect skid steer loader whenever the job is too big for a shovel or the space is too small for a larger machine.
                             </p>
 
-                            <Link to={'/locator'} className="btn btn1">
-                                Connect Link to Store Locator
+                            <Link to={'/locator'} className="btn btn2">
+                                Enquire Now
                             </Link>
 
-                            <a  onClick={handleShow} className="btn btn2">
-                                Download Brochure
-                            </a>
 
+                            <Link onClick={handleShow} className="btn btn2">
+                                Download Brochure
+                            </Link>
+
+                            <Link  className="btn btn1">
+                                Connect with the sales Team
+                            </Link>
 
                         </div>
 
@@ -364,11 +369,6 @@ function SingleProduct() {
             {/* Modak */}
             <div className="col-md-6 col-sm-12 mb-4 mb-md-0">
 
-                <p className="pricing-header">Whatsapp Api pricing</p>
-                <p className="pricing-subheader">Pay as per usage</p>
-                <button className="btn-2 btn-custom" onClick={handleShow}>
-                    Country wise price list
-                </button>
 
                 {/* Modal */}
                 {showModal && (

@@ -149,7 +149,7 @@ function Service() {
                                         <p className="card-text">
                                             Dirt, dried mud, light snow and other debris are quickly and efficiently swept away with this hydraulically driven attachment.
                                         </p>
-                                        <a href="#" className=" d-flex justify-content-start align-items-center ">Learn More <i
+                                        <a href="#" className=" d-flex justify-content-start align-items-center btn-learn btn">Learn More <i
                                             className="fa-solid ps-1 fa-right-long"></i></a>
                                     </div>
                                 </div>
@@ -168,7 +168,7 @@ function Service() {
                                         <p className="card-text">
                                             Dirt, dried mud, light snow and other debris are quickly and efficiently swept away with this hydraulically driven attachment.
                                         </p>
-                                        <a href="#" className=" d-flex justify-content-start align-items-center ">Learn More <i
+                                        <a href="#" className=" d-flex justify-content-start align-items-center btn-learn btn">Learn More <i
                                             className="fa-solid ps-1 fa-right-long"></i></a>
                                     </div>
                                 </div>
@@ -187,7 +187,7 @@ function Service() {
                                         <p className="card-text">
                                             Dirt, dried mud, light snow and other debris are quickly and efficiently swept away with this hydraulically driven attachment.
                                         </p>
-                                        <a href="#" className=" d-flex justify-content-start align-items-center ">Learn More <i
+                                        <a href="#" className=" d-flex justify-content-start align-items-center btn-learn btn">Learn More <i
                                             className="fa-solid ps-1 fa-right-long"></i></a>
                                     </div>
                                 </div>
@@ -206,7 +206,7 @@ function Service() {
                                         <p className="card-text">
                                             Dirt, dried mud, light snow and other debris are quickly and efficiently swept away with this hydraulically driven attachment.
                                         </p>
-                                        <a href="#" className=" d-flex justify-content-start align-items-center ">Learn More <i
+                                        <a href="#" className=" d-flex justify-content-start align-items-center btn-learn btn">Learn More <i
                                             className="fa-solid ps-1 fa-right-long"></i></a>
                                     </div>
                                 </div>
