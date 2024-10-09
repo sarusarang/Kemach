@@ -86,7 +86,7 @@ function MostUsed() {
 
                         <div className="col mb-3">
 
-                            <Link ><div className="card shadow border-0" data-aos="fade-up">
+                            <Link to={'/skid'}><div className="card shadow border-0" data-aos="fade-up">
 
                                 <img src="/SQ 3.jpg" loading='lazy' alt="slide-img" />
 
@@ -102,7 +102,7 @@ function MostUsed() {
 
                         <div className="col mb-3">
 
-                            <Link ><div className="card shadow border-0" data-aos="fade-down">
+                            <Link to={'/mini'}><div className="card shadow border-0" data-aos="fade-down">
 
                                 <img src="/SQ 5.jpg" loading='lazy' alt="slide-img" />
 
@@ -118,7 +118,7 @@ function MostUsed() {
 
                         <div className="col mb-3">
 
-                            <Link ><div className="card shadow border-0" data-aos="fade-up">
+                            <Link to={'/backhoe'}><div className="card shadow border-0" data-aos="fade-up">
 
                                 <img src="/SQ1.jpg" loading='lazy' alt="slide-img" />
 
@@ -131,7 +131,7 @@ function MostUsed() {
 
                         </div>
 
-                        <div className="col mb-3" data-aos="fade-up">
+                        <div className="col mb-3" data-aos="fade-up" style={{cursor:'pointer'}} onClick={()=>{Navigate('/service')}}>
 
                             <Carousel id="carouselExampleIndicatorsCard1" className='border shadow' interval={3000} controls={false} indicators={false}>
 

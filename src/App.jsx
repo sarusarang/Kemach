@@ -10,6 +10,8 @@ const Contact= lazy(() => import('./Pages/ContactUs'))
 const Locator= lazy(() => import('./Pages/Locator'))
 const Skid= lazy(() => import('./Pages/Skid'))
 const Mini= lazy(() => import('./Pages/Mini'))
+const BackHoe= lazy(() => import('./Pages/BackHoe'))
+const Compressors= lazy(() => import('./Pages/Electric'))
 const DrillsBits= lazy(() => import('./Pages/DrillsBits'))
 const RockBeaker= lazy(() => import('./Pages/RockBeaker'))
 const Enquiry= lazy(() => import('./Pages/Enquiry'))
@@ -55,6 +57,10 @@ function App() {
           <Route path="/skid" element={<Skid />} />
 
           <Route path="/mini" element={<Mini />} />
+
+          <Route path="/compressors" element={<Compressors />} />
+
+          <Route path="/backhoe" element={<BackHoe />} />
 
           <Route path="/drills" element={<DrillsBits />} />
 

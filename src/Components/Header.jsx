@@ -90,10 +90,10 @@ function Header() {
 
                                         <li><Link to={'/skid'} className="dropdown-item" >Skid-Steer Loaders</Link></li>
                                         <li><Link to={'/mini'} className="dropdown-item" >Mini Excavators</Link></li>
-                                        <li><Link to={'/mini'} className="dropdown-item" >Backhoe Loaders</Link></li>
+                                        <li><Link to={'/backhoe'} className="dropdown-item" >Backhoe Loaders</Link></li>
                                         <li><Link to={'/rock'} className="dropdown-item" >Rock Breakers </Link></li>
                                         <li><Link to={'/drills'} className="dropdown-item" >Hydraulic Attachments & Drill Bits</Link></li>
-                                        <li><Link to={'/mini'} className="dropdown-item" >Electric Compressors</Link></li>
+                                        <li><Link to={'/compressors'} className="dropdown-item" >Electric Compressors</Link></li>
                                         <li><Link to={'/service'} className="dropdown-item" >Service & Parts </Link></li>
 
                                     </ul>

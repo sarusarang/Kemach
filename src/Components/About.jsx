@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { Carousel } from 'react-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useNavigate } from 'react-router-dom';
 
 function About() {
 
@@ -13,6 +14,8 @@ function About() {
 
     }, [])
 
+
+    const Navigate = useNavigate()
 
     return (
 
@@ -60,7 +63,7 @@ function About() {
 
 
 
-                        <div className="col mb-5">
+                        <div className="col mb-5" onClick={()=>{Navigate('/skid')}} style={{cursor:'pointer'}}>
 
                             <div className="card" data-aos="fade-up">
                                 <Carousel id="carouselExampleIndicatorsCard1" interval={3000} controls={false} indicators={true}>
@@ -96,7 +99,7 @@ function About() {
 
 
 
-                        <div className="col mb-5">
+                        <div className="col mb-5" onClick={()=>{Navigate('/backhoe')}} style={{cursor:'pointer'}}>
 
                             <div className="card" data-aos="fade-up">
                                 <Carousel id="carouselExampleIndicatorsCard1" interval={3000} controls={false} indicators={true}>
@@ -132,7 +135,7 @@ function About() {
 
 
 
-                        <div className="col mb-5">
+                        <div className="col mb-5" onClick={()=>{Navigate('/mini')}} style={{cursor:'pointer'}}>
 
                             <div className="card" data-aos="fade-up">
 

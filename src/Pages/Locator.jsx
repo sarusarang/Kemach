@@ -279,7 +279,7 @@ function Locator() {
 
                         <div className="col mb-3">
 
-                            <Link>
+                            <Link to={'/skid'}>
 
                                 <div className="card shadow border-0" data-aos="fade-up">
 
@@ -297,7 +297,7 @@ function Locator() {
 
                         <div className="col mb-3">
 
-                            <Link>
+                            <Link to={'/mini'}>
                                 <div className="card shadow border-0" data-aos="fade-down">
 
                                     <img src="/SQ 5.jpg" loading='lazy' alt="slide-img" />
@@ -314,7 +314,7 @@ function Locator() {
 
                         <div className="col mb-3">
 
-                            <Link>
+                            <Link to={'/backhoe'}>
 
                                 <div className="card shadow border-0" data-aos="fade-up">
 
@@ -332,14 +332,14 @@ function Locator() {
 
                         <div className="col mb-3">
 
-                            <Link>
+                            <Link to={'/service'}>
 
                                 <div className="card shadow border-0" data-aos="fade-up">
 
                                     <img src="/SQ 4 A.jpg" loading='lazy' alt="slide-img" />
 
                                     <div className="card-img-overlay d-flex align-items-end mb-3 justify-content-center">
-                                        <h4 className="card-title fw-bolder text-white ">Backhoe Loaders</h4>
+                                        <h4 className="card-title fw-bolder text-white ">Attachment & Accessories</h4>
                                     </div>
 
                                 </div>
