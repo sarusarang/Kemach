@@ -88,7 +88,7 @@ function Header() {
 
                                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
 
-                                        <li><Link to={'/mini'} className="dropdown-item" >Skid-Steer Loaders</Link></li>
+                                        <li><Link to={'/skid'} className="dropdown-item" >Skid-Steer Loaders</Link></li>
                                         <li><Link to={'/mini'} className="dropdown-item" >Mini Excavators</Link></li>
                                         <li><Link to={'/mini'} className="dropdown-item" >Backhoe Loaders</Link></li>
                                         <li><Link to={'/rock'} className="dropdown-item" >Rock Breakers </Link></li>

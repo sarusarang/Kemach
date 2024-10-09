@@ -27,20 +27,22 @@ function About() {
 
                     <div className="row">
 
-                        <div className="col-md-6 d-flex flex-column justify-content-center align-items-center"
-                            data-aos-duration="1000" data-aos="fade-up">
-                            <h3 className="text-center">About</h3>
+                        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center" data-aos-duration="1000" data-aos="fade-up">
+
+                            {/* <h3 class="text-center">About</h3> */}
                             <p>Kemach Equipments Pvt Ltd is a leading dealer of Bobcat and Indus Rock Tools,
                                 providing a comprehensive range of high-quality construction and industrial machinery.
                                 Specializing in reliable Bobcat equipment and durable Indus Rock Tools,
                                 we offer efficient, performance-driven solutions that meet the
                                 toughest demands of the construction industry.
                             </p>
+
                         </div>
 
-                        <div className="col-md-6 d-flex justify-content-center align-items-center" data-aos-duration="1000"
-                            data-aos="fade-down">
-                            <img src="/logo.jpg" loading='lazy' alt="img" />
+                        <div class="col-md-6 d-flex justify-content-center align-items-center" data-aos-duration="1000" data-aos="fade-down">
+
+                            <img src="/about-a.jpg" alt='img' loading='lazy' />
+
                         </div>
 
 
@@ -49,7 +51,7 @@ function About() {
 
                 </section>
 
-
+                <hr style={{ color: 'red' }} />
 
                 {/* About Slider */}
                 <section className="s2">
@@ -64,7 +66,7 @@ function About() {
                                 <Carousel id="carouselExampleIndicatorsCard1" interval={3000} controls={false} indicators={true}>
 
                                     <Carousel.Item>
-                                        <img src="/sam1.jpg" loading="lazy" className="d-block w-100" alt="First slide" />
+                                        <img src="/skid1.jpg" loading="lazy" className="d-block w-100" alt="First slide" />
                                         <Carousel.Caption>
                                             <h5>Skid-Steer Loaders</h5>
 
@@ -72,7 +74,7 @@ function About() {
                                     </Carousel.Item>
 
                                     <Carousel.Item>
-                                        <img src="/sam2.jpg" loading="lazy" className="d-block w-100" alt="Second slide" />
+                                        <img src="/skid2.jpg" loading="lazy" className="d-block w-100" alt="Second slide" />
                                         <Carousel.Caption>
                                             <h5>Skid-Steer Loaders</h5>
 
@@ -80,7 +82,7 @@ function About() {
                                     </Carousel.Item>
 
                                     <Carousel.Item>
-                                        <img src="/sam3.jpg" loading="lazy" className="d-block w-100" alt="Third slide" />
+                                        <img src="/skid3.jpg" loading="lazy" className="d-block w-100" alt="Third slide" />
                                         <Carousel.Caption>
                                             <h5>Skid-Steer Loaders</h5>
 
@@ -100,25 +102,25 @@ function About() {
                                 <Carousel id="carouselExampleIndicatorsCard1" interval={3000} controls={false} indicators={true}>
 
                                     <Carousel.Item>
-                                        <img src="/sam1.jpg" loading="lazy" className="d-block w-100" alt="First slide" />
+                                        <img src="/back1.jpg" loading="lazy" className="d-block w-100" alt="First slide" />
                                         <Carousel.Caption>
-                                            <h5>Mini Excavators</h5>
+                                            <h5>Backhoe Loader</h5>
 
                                         </Carousel.Caption>
                                     </Carousel.Item>
 
                                     <Carousel.Item>
-                                        <img src="/sam2.jpg" loading="lazy" className="d-block w-100" alt="Second slide" />
+                                        <img src="/back2.jpg" loading="lazy" className="d-block w-100" alt="Second slide" />
                                         <Carousel.Caption>
-                                            <h5>Mini Excavators</h5>
+                                            <h5>Backhoe Loader</h5>
 
                                         </Carousel.Caption>
                                     </Carousel.Item>
 
                                     <Carousel.Item>
-                                        <img src="/sam3.jpg" loading="lazy" className="d-block w-100" alt="Third slide" />
+                                        <img src="/back3.jpg" loading="lazy" className="d-block w-100" alt="Third slide" />
                                         <Carousel.Caption>
-                                            <h5>Mini Excavators</h5>
+                                            <h5>Backhoe Loader</h5>
 
                                         </Carousel.Caption>
                                     </Carousel.Item>
@@ -133,35 +135,42 @@ function About() {
                         <div className="col mb-5">
 
                             <div className="card" data-aos="fade-up">
+
                                 <Carousel id="carouselExampleIndicatorsCard1" interval={3000} controls={false} indicators={true}>
 
                                     <Carousel.Item>
-                                        <img src="/sam1.jpg" loading="lazy" className="d-block w-100" alt="First slide" />
+                                        <img src="/exe1.jpg" loading="lazy" className="d-block w-100" alt="First slide" />
                                         <Carousel.Caption>
-                                            <h5>Hydraulic Attachments & Drill Bits</h5>
+                                            <h5>Compact Excavators</h5>
 
                                         </Carousel.Caption>
                                     </Carousel.Item>
 
                                     <Carousel.Item>
-                                        <img src="/sam2.jpg" loading="lazy" className="d-block w-100" alt="Second slide" />
+                                        <img src="/exe3.jpg" loading="lazy" className="d-block w-100" alt="Second slide" />
                                         <Carousel.Caption>
-                                            <h5>Hydraulic Attachments & Drill Bits</h5>
+                                            <h5>Compact Excavators</h5>
 
                                         </Carousel.Caption>
                                     </Carousel.Item>
 
                                     <Carousel.Item>
-                                        <img src="/sam3.jpg" loading="lazy" className="d-block w-100" alt="Third slide" />
+                                        <img src="/exe4.jpg" loading="lazy" className="d-block w-100" alt="Third slide" />
                                         <Carousel.Caption>
-                                            <h5>Hydraulic Attachments & Drill Bits</h5>
+                                            <h5>Compact Excavators</h5>
 
                                         </Carousel.Caption>
                                     </Carousel.Item>
 
 
                                 </Carousel>
+
+
+
                             </div>
+
+
+
                         </div>
 
 

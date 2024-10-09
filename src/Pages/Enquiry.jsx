@@ -10,46 +10,52 @@ function Enquiry() {
 
         <>
 
-            <main className="container d-flex justify-content-evenly align-items-center min-vh-100" id="Enquiry">
-
-                <div className="form-div">
-
-                    <form action="">
-
-                        <div className="row gy-5">
-                            
-                            <div className="col-md-4"><label >Name</label><input placeholder="Name" type="text"
-                                className="form-control w-100" /></div>
-                            <div className="col-md-4"><label >Email</label><input placeholder="Email" type="text"
-                                className="form-control w-100" /></div>
-                            <div className="col-md-4"><label >Mobile</label><input placeholder="Mobile" type="text"
-                                className="form-control w-100" /></div>
-                            <div className="col-md-6">
-                                <label >Machine</label>
-                                <select className="form-select" name="" id="">
-                                    <option value="">----------</option>
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                    <option value="">4</option>
+            <main className="container p-5" id="contact">
+                <section className="section1">
+                    <h2>Book for Test Operation / Equipment Enquiry</h2>
+                    <p>Submit the Form or Direct Contact</p>
+                </section>
+                <section className="section2 ">
+                    <form action="" className="contact-form">
+                        <div className="row py-4 ">
+                            <div className=" mt-4 col-sm-4" data-aos="fade-up">
+                                <label for="">Name</label>
+                                <input type="text" className="form-control " placeholder="" name="" id="" />
+                            </div>
+                            <div className=" mt-4 col-sm-4" data-aos="fade-up">
+                                <label for="">Mobile/Phone Number</label>
+                                <input type="text" className="form-control " placeholder="" name="" id="" />
+                            </div>
+                            <div className=" mt-4 col-sm-4" data-aos="fade-up">
+                                <label for="">Email</label>
+                                <input type="email" className="form-control " placeholder="" name="" id="" />
+                            </div>
+                            <div className=" mt-4 col-sm-6" data-aos="fade-up">
+                                <label for="">Machine/Equipment Model</label>
+                                <select name="" id="" className="form-select ">
+                                    <option className="" value="" selected>-----------</option>
+                                    <option className="" value="">Equipment1</option>
+                                    <option className="" value="">Equipment2</option>
+                                    <option className="" value="">Equipment3</option>
+                                    <option className="" value="">Equipment4</option>
                                 </select>
                             </div>
-                            <div className="col-md-6">
-                                <label >Location</label>
-                                <select className="form-select" name="" id="">
-                                    <option value="">----------</option>
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                    <option value="">4</option>
+                            <div className=" mt-4 col-sm-6" data-aos="fade-up">
+                                <label for="">Nearest Showroom</label>
+                                <select name="" id="" className="form-select">
+                                    <option className="form-control" value="" selected>-----------</option>
+                                    <option className="form-control" value="">Showroom1</option>
+                                    <option className="form-control" value="">Showroom2</option>
+                                    <option className="form-control" value="">Showroom3</option>
+                                    <option className="form-control" value="">Showroom4</option>
                                 </select>
                             </div>
-                            <div className="col-md-6">
+                            <div className=" mt-4 col-12" data-aos="fade-up">
                                 <button className="btn sbtn">Submit <i className="fa-regular fa-paper-plane ms-3"></i></button>
                             </div>
                         </div>
                     </form>
-                </div>
+                </section>
 
             </main>
 

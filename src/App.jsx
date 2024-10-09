@@ -8,6 +8,7 @@ const Footer = lazy(() => import('./Components/Footer'))
 const Header = lazy(() => import('./Components/Header'))
 const Contact= lazy(() => import('./Pages/ContactUs'))
 const Locator= lazy(() => import('./Pages/Locator'))
+const Skid= lazy(() => import('./Pages/Skid'))
 const Mini= lazy(() => import('./Pages/Mini'))
 const DrillsBits= lazy(() => import('./Pages/DrillsBits'))
 const RockBeaker= lazy(() => import('./Pages/RockBeaker'))
@@ -50,6 +51,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
 
           <Route path="/locator" element={<Locator />} />
+
+          <Route path="/skid" element={<Skid />} />
 
           <Route path="/mini" element={<Mini />} />
 

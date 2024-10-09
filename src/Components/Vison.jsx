@@ -59,15 +59,22 @@ function Vison() {
 
                 <section className="s6">
 
-                    <div className="row r1">
-                        <h3 data-aos="fade-up">Vision</h3>
-                        <q data-aos="fade-down">
-                            Kemach’s vision is to be the leading provider of innovative and reliable earth-moving equipment
-                            solutions, consistently delivering high-quality products and services. We aim to foster long-term
-                            customer relationships built on trust and to expand our presence across India while maintaining
-                            excellence in service and customer satisfaction.
-                        </q>
-                    </div>
+                    <section className="row">
+
+                        <div className="col-md-4 r1">
+                            <h3 data-aos="fade-up fw-bold" style={{ textAlign: 'center', fontWeight: '600' }}>Vision</h3>
+                        </div>
+
+                        <div className="col-md-8 r1">
+                            <q data-aos="fade-down" className="text-center" style={{ fontSize: '18px', textAlign: 'justify' }}>
+                                Kemach’s vision is to be the leading provider of innovative and reliable Compact Equipments and
+                                Earth-moving Equipment solutions, consistently delivering high-quality products and services. We aim
+                                to foster long-term customer relationships built on trust and to expand our presence across India
+                                while maintaining excellence in service and customer satisfaction
+                            </q>
+                        </div>
+
+                    </section>
 
 
                     <div className="row r2">
@@ -128,8 +135,8 @@ function Vison() {
 
 
 
-                <section className="s7 py-3">
-                    <div className="row">
+                <section class="s7 py-3">
+                    <div class="row">
                         <h3 data-aos="zoom-in">Team Strength</h3>
                         <p data-aos="zoom-in-up">
                             In the dynamic realm of construction equipment, customer acquisition becomes effortless. Our
@@ -141,6 +148,62 @@ function Vison() {
                             seamless process and commitment to excellence position us for remarkable achievements in this
                             dynamic industry.
                         </p>
+                    </div>
+                </section>
+
+
+                <section class="award">
+                    <h3>Awards and Achievements</h3>
+                    <div class="row gx-4 gx-lg-3 row-cols-1 row-cols-md-2 justify-content-center">
+                        <div class="col mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    Bobcat Best Chanel Partner Award For 05 Years
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    Sales Volume Increased Year By Year.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    No.1 Position In SSL Market
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    No 2 Position In The MEX Market Till 2022.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    No.4 Position In The Industry
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    Created A Strong Customer Base.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    Regular Contact With Bobcat.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
