@@ -1,6 +1,7 @@
 import React from "react"
 import { Suspense, lazy } from "react"
 import { Routes, Route } from "react-router-dom"
+import LoadingSpinner from "./Components/LoadingSpinner"
 
 
 const Landing = lazy(() => import('./Pages/Landing'))
@@ -43,7 +44,7 @@ function App() {
       </Suspense>
 
 
-      <Suspense>
+      <Suspense fallback={<LoadingSpinner/>}>
 
 
         <Routes>
