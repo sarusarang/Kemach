@@ -16,12 +16,6 @@ export default function Skid() {
 
 
 
-
-
-    console.log(data)
-
-
-
     useEffect(() => {
 
         AOS.init()
@@ -95,7 +89,7 @@ export default function Skid() {
 
                                             <div className="col mb-3 mt-3" key={index}>
 
-                                                <Link to={'/pro/1'} className="text-decoration-none ">
+                                                <Link to={`/pro/${item.id}`} className="text-decoration-none ">
                                                     <div className="card h-100" data-aos="fade-down">
                                                         <img src={item.image}
                                                             className="img-fluid" alt="..." loading='lazy' />
