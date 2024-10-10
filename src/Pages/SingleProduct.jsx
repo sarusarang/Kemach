@@ -191,18 +191,42 @@ function SingleProduct() {
                                 The Bobcat® S70 skid-steer loader is small enough to get in the tight spots, yet tough enough to get you out. This agile little workhorse is only 6 ft. tall and 3 ft. wide — the ideal size for quickly moving through narrow doorways, corridors, aisles, alleys and gates, and for working under low ceilings. It's the perfect skid steer loader whenever the job is too big for a shovel or the space is too small for a larger machine.
                             </p>
 
-                            <a href='https://wa.me/+919778412529'  target='_blank' className="btn btn2">
-                                Enquire Now
-                            </a>
+
+                            <div className='row justify-content-center'>
+
+                                <div className='col-md-6 mt-3'>
+
+                                    <a href='https://wa.me/+919778412529' target='_blank' className="btn btn2">
+                                        Enquire Now
+                                    </a>
+
+                                </div>
+
+                                <div className='col-md-6 mt-3'>
+
+                                    <Link className="btn btn1" to={'/book'}>
+                                        Connect with the sales Team
+                                    </Link>
+
+                                </div>
+
+                                <div className='col-md-6 mt-3'>
+
+                                    <Link onClick={handleShow} className="btn btn2">
+                                        Download Brochure
+                                    </Link>
+
+                                </div>
 
 
-                            <Link onClick={handleShow} className="btn btn2">
-                                Download Brochure
-                            </Link>
+                            </div>
 
-                            <Link  className="btn btn1" to={'/book'}>
-                                Connect with the sales Team
-                            </Link>
+
+
+
+
+
+
 
                         </div>
 

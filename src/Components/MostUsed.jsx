@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { Link, useNavigate } from 'react-router-dom'
@@ -13,6 +13,39 @@ function MostUsed() {
         AOS.init()
 
     }, [])
+
+
+    // State to manage the display of full content
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    // Function to toggle the expanded state
+    const toggleReadMore = () => {
+        setIsExpanded(!isExpanded);
+    };
+
+
+
+    // State to detect if the screen is mobile
+    const [isMobile, setIsMobile] = useState(false);
+
+
+
+
+    // Function to check if the current view is mobile (screen width < 768px)
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        // Initial check
+        handleResize();
+
+        // Add event listener for window resize
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup event listener on component unmount
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
 
     const Navigate = useNavigate()
@@ -45,7 +78,7 @@ function MostUsed() {
 
                             <div className="box shadow" onClick={() => { Navigate('/book') }} style={{ cursor: 'pointer' }}>
 
-                                <p>Service Appointment</p>
+                                <p>Contact with sales Team</p>
                                 <img src="/worker.png" alt="slide-img" loading='lazy' />
 
                             </div>
@@ -184,18 +217,67 @@ function MostUsed() {
                         <div className="col-md-8">
 
                             <h3 data-aos="fade-up">The Kemach</h3>
+
+
                             <p data-aos="fade-down" style={{ textAlign: 'justify' }}>
+                                {/* First part of the content always visible */}
+                                Kemach has been a trusted dealer of Bobcat Compact Equipments and construction Industry for the past 18 years,
+                                serving both Kerala and Tamil Nadu with a strong commitment to quality and customer satisfaction.
+                                As a leading provider in the industry, Kemach offers a wide range of Bobcat Compact Machinery,
+                                including Skid Steer loaders, Mini Excavators, Backhoe Loaders, and Rock Breakers, Compressors
+                                (Engine Drive – Electric) for catering to various construction, agricultural, and industrial needs.
+                                In addition to sales, Kemach provides comprehensive service-related solutions, ensuring that their customers
+                                receive top-notch maintenance, repairs, and support throughout the lifecycle of their equipment.
 
 
-                                Kemach has been a trusted dealer of Bobcat Compact Equipments and construction Industry for the past 18 years, serving both Kerala and Tamil Nadu with a strong commitment to quality and customer satisfaction. As a leading provider in the industry, Kemach offers a wide range of Bobcat Compact Machinery, including Skid Steer loaders, Mini Excavators, Backhoe Loaders, and Rock Breakers, Compressors (Engine Drive – Electric) for catering to various construction, agricultural, and industrial needs. In addition to sales, Kemach provides comprehensive service-related solutions, ensuring that their customers receive top-notch maintenance, repairs, and support throughout the lifecycle of their equipment. <br /> <br />
+                                {
 
-                                KP Velumani is a highly accomplished leader with over 30 years of expertise in the construction equipment industry. With a robust presence in the Kerala market for the past 15 years, he has consistently demonstrated a deep understanding of market trends and customer needs. A graduate with a strong technical background, he began his career in the Product Support Department at ELGI Equipments Ltd, where he specialized in Rotary Screw Compressors for a decade (1986-1996). <br /> <br />
+                                    !isExpanded && !isMobile &&
 
-                                Velumani's leadership track record includes serving as Director of Ramsive Pneumatics Pvt Ltd and Marwell Enncon Tech Pvt Ltd, where he drove significant growth and operational efficiency. Currently, as the Managing Director of Kemach Equipments, a trusted dealer for Bobcat and Indus Rock, he continues to steer the company towards innovation and excellence. His visionary leadership, coupled with a commitment to delivering high-quality solutions, makes him a driving force in the industry and a valuable asset to any enterprise. <br /> 
+                                    <>
+                                        <br /><br />
+                                        KP Velumani is a highly accomplished leader with over 30 years of expertise in the construction equipment industry.
+                                        With a robust presence in the Kerala market for the past 15 years, he has consistently demonstrated a deep understanding
+                                        of market trends and customer needs. A graduate with a strong technical background, he began his career in the Product Support
+                                        Department at ELGI Equipments Ltd, where he specialized in Rotary Screw Compressors for a decade (1986-1996). <br /><br />
 
+                                        Velumani's leadership track record includes serving as Director of Ramsive Pneumatics Pvt Ltd and Marwell Enncon Tech Pvt Ltd,
+                                        where he drove significant growth and operational efficiency. Currently, as the Managing Director of Kemach Equipments,
+                                        a trusted dealer for Bobcat and Indus Rock, he continues to steer the company towards innovation and excellence.
+                                        His visionary leadership, coupled with a commitment to delivering high-quality solutions, makes him a driving force
+                                        in the industry and a valuable asset to any enterprise.
+
+                                    </>
+
+                                }
+
+                                {/* Only display the rest if `isExpanded` is true, and the view is mobile */}
+                                {isExpanded && isMobile && (
+                                    <>
+                                        <br /><br />
+                                        KP Velumani is a highly accomplished leader with over 30 years of expertise in the construction equipment industry.
+                                        With a robust presence in the Kerala market for the past 15 years, he has consistently demonstrated a deep understanding
+                                        of market trends and customer needs. A graduate with a strong technical background, he began his career in the Product Support
+                                        Department at ELGI Equipments Ltd, where he specialized in Rotary Screw Compressors for a decade (1986-1996). <br /><br />
+
+                                        Velumani's leadership track record includes serving as Director of Ramsive Pneumatics Pvt Ltd and Marwell Enncon Tech Pvt Ltd,
+                                        where he drove significant growth and operational efficiency. Currently, as the Managing Director of Kemach Equipments,
+                                        a trusted dealer for Bobcat and Indus Rock, he continues to steer the company towards innovation and excellence.
+                                        His visionary leadership, coupled with a commitment to delivering high-quality solutions, makes him a driving force
+                                        in the industry and a valuable asset to any enterprise.
+                                    </>
+                                )}
 
 
                             </p>
+
+                            {/* Show the button only on mobile view */}
+                            {isMobile && (
+                                <button onClick={toggleReadMore} className="btn btn-read">
+                                    {isExpanded ? 'Read Less' : 'Read More'}
+                                </button>
+                            )}
+
 
                         </div>
 

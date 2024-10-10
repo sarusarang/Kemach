@@ -30,7 +30,7 @@ function About() {
 
                     <div className="row">
 
-                        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center" data-aos-duration="1000" data-aos="fade-up">
+                        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center  order-2 order-md-1" data-aos-duration="1000" data-aos="fade-up">
 
                             {/* <h3 class="text-center">About</h3> */}
                             <p>Kemach Equipments Pvt Ltd is a leading dealer of Bobcat and Indus Rock Tools,
@@ -42,7 +42,7 @@ function About() {
 
                         </div>
 
-                        <div class="col-md-6 d-flex justify-content-center align-items-center" data-aos-duration="1000" data-aos="fade-down">
+                        <div class="col-md-6 d-flex order-1 order-md-2 justify-content-center align-items-center" data-aos-duration="1000" data-aos="fade-down">
 
                             <img src="/about-a.jpg" alt='img' loading='lazy' />
 
