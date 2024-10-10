@@ -1,8 +1,9 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { Link } from 'react-router-dom'
 import { Machineries } from '../Hooks/Machineries'
+import { Attachments } from '../Hooks/Attachements'
 
 export default function Skid() {
 
@@ -11,7 +12,11 @@ export default function Skid() {
 
     const { data, error, isLoading, isSuccess } = Machineries()
 
+    const { data: attchmentData, isLoading: loading, isSuccess: success } = Attachments()
+
     const [ProductData, SetProductData] = useState([])
+
+    const [ProductAttachments, SetProductAttachments] = useState([])
 
 
 
@@ -19,9 +24,13 @@ export default function Skid() {
 
         AOS.init()
 
-        if (data && isSuccess) {
+        if (data && isSuccess && attchmentData && success) {
 
             const res = data.filter((item) => (item.category === "Skid_Steer_Loaders"))
+
+            const attach = attchmentData.filter((item) => (item.machinery.category === "Skid_Steer_Loaders"))
+
+            SetProductAttachments(attach)
 
             SetProductData(res)
         }
@@ -32,11 +41,6 @@ export default function Skid() {
     }, [data, isSuccess])
 
 
-
-
-
-   
-    
 
 
 
@@ -78,7 +82,7 @@ export default function Skid() {
                                 {
 
 
-                                    isLoading ?
+                                    isLoading && error ?
 
                                         <div>
                                             Loading...?
@@ -143,70 +147,54 @@ export default function Skid() {
                         <h1>Attachments</h1>
                     </div>
                 </section>
+
+
                 <section className="fork-s1">
+
+
                     <div className="row row2 gx-4 gx-lg-3 row-cols-1 row-cols-sm-2 row-cols-xl-6 justify-content-center ">
-                        <div className="col mb-3">
-                            <a href="" className="text-decoration-none ">
-                                <div className="card h-100" data-aos="fade-down">
-                                    <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1680947784/bobcat-assets/alao-approved/in/products/attachments/images/20230406-bobcat-in-brushcat-rotary-cutter"
-                                        className="img-fluid" alt="..." loading='lazy' />
-                                    <div className="card-body">
-                                        <h5 className="card-title">
-                                            Brushcat - 66", Standard Flow
-                                        </h5>
-                                        <a href="#" className=" d-flex justify-content-center align-items-center btn ">Learn More <i
-                                            className="fa-solid ps-1 fa-right-long"></i></a>
-                                    </div>
+
+
+                        {
+
+                            loading ?
+
+                                <div>
+                                    Loading
                                 </div>
-                            </a>
-                        </div>
-                        <div className="col mb-3">
-                            <a href="" className="text-decoration-none ">
-                                <div className="card h-100" data-aos="fade-down">
-                                    <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_320/v1680947784/bobcat-assets/alao-approved/in/products/attachments/images/20230406-bobcat-in-brushcat-rotary-cutter"
-                                        className="img-fluid" alt="..." loading='lazy' />
-                                    <div className="card-body">
-                                        <h5 className="card-title">
-                                            Brushcat - 72", High Flow
-                                        </h5>
-                                        <a href="#" className=" d-flex justify-content-center align-items-center btn ">Learn More <i
-                                            className="fa-solid ps-1 fa-right-long"></i></a>
+
+                                :
+
+                                ProductAttachments.map((item, index) => (
+
+
+                                    <div className="col mb-3" key={index}>
+                                        <a href="https://wa.me/+919778412529" target='_blank' className="text-decoration-none ">
+                                            <div className="card h-100" data-aos="fade-down">
+                                                <img src={item.image}
+                                                    className="img-fluid" alt="..." loading='lazy' />
+                                                <div className="card-body">
+                                                    <h5 className="card-title">
+                                                       {item.name}
+                                                    </h5>
+                                                    <a href="https://wa.me/+919778412529" target='_blank' className=" d-flex justify-content-center align-items-center btn ">Learn More <i
+                                                        className="fa-solid ps-1 fa-right-long"></i></a>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col mb-3">
-                            <a href="" className="text-decoration-none ">
-                                <div className="card h-100" data-aos="fade-down">
-                                    <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_320/v1680947784/bobcat-assets/alao-approved/in/products/attachments/images/20230406-bobcat-in-brushcat-rotary-cutter"
-                                        className="img-fluid" alt="..." loading='lazy' />
-                                    <div className="card-body">
-                                        <h5 className="card-title">
-                                            Brushcat - 72", Standard Flow
-                                        </h5>
-                                        <a href="#" className=" d-flex justify-content-center align-items-center btn ">Learn More <i
-                                            className="fa-solid ps-1 fa-right-long"></i></a>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col mb-3">
-                            <a href="" className="text-decoration-none ">
-                                <div className="card h-100" data-aos="fade-down">
-                                    <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_320/v1680947784/bobcat-assets/alao-approved/in/products/attachments/images/20230406-bobcat-in-brushcat-rotary-cutter"
-                                        className="img-fluid" alt="..." loading='lazy' />
-                                    <div className="card-body">
-                                        <h5 className="card-title">
-                                            Brushcat - 80", High Flow
-                                        </h5>
-                                        <a href="#" className=" d-flex justify-content-center align-items-center btn ">Learn More <i
-                                            className="fa-solid ps-1 fa-right-long"></i></a>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+
+
+                                ))
+
+                        }
+
+
                     </div>
+
                 </section>
+
+
             </main>
 
 

@@ -19,3 +19,11 @@ export const GetSlider = async () => {
     return CommonApi("GET", `${base_url}/home-slider/`, "", "")
 
 }
+
+
+// Get Attachment
+export const GetAttachment = async () => {
+
+    return CommonApi("GET", `${base_url}/attachments/`, "", "")
+
+}

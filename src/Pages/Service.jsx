@@ -1,21 +1,34 @@
 import React from 'react'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { Attachments } from '../Hooks/Attachements'
 
 
 function Service() {
 
+    const { data: attchmentData, isLoading: loading, isSuccess: success } = Attachments()
+
+
+    const [ProductAttachments, SetProductAttachments] = useState([])
 
 
     useEffect(() => {
 
+
+        if (attchmentData && success) {
+
+            SetProductAttachments(attchmentData)
+        }
+
         AOS.init()
+
+        window.scrollTo(0, 0)
 
     }, [])
 
 
-    window.scrollTo(0, 0)
+
 
 
 
@@ -134,84 +147,61 @@ function Service() {
                         <h1>Parts</h1>
                     </div>
                 </section>
+
+
                 <section className="fork-s1">
                     <div className="row row2 gx-4 gx-lg-3 row-cols-1 row-cols-sm-2 row-cols-xl-6 justify-content-center ">
-                        <div className="col mb-3">
-                            <a href="" className="text-decoration-none " >
-                                <div className="card" data-aos="fade-down">
-                                    <img
-                                        src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1680947781/bobcat-assets/alao-approved/in/products/attachments/images/20230406-bobcat-in-angle-broom"
-                                        className="img-fluid" alt="..." loading='lazy' />
-                                    <div className="card-body">
-                                        <h5 className="card-title">
-                                            Angle Broom - 64"
-                                        </h5>
-                                        <p className="card-text">
-                                            Dirt, dried mud, light snow and other debris are quickly and efficiently swept away with this hydraulically driven attachment.
-                                        </p>
-                                        <a href="#" className=" d-flex justify-content-start align-items-center btn-learn btn">Learn More <i
-                                            className="fa-solid ps-1 fa-right-long"></i></a>
-                                    </div>
+
+
+
+                        {
+
+
+                            loading ?
+
+                                <div>
+
+                                    Loading..?
+
                                 </div>
-                            </a>
-                        </div>
-                        <div className="col mb-3">
-                            <a href="" className="text-decoration-none " >
-                                <div className="card" data-aos="fade-down">
-                                    <img
-                                        src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1680947781/bobcat-assets/alao-approved/in/products/attachments/images/20230406-bobcat-in-angle-broom"
-                                        className="img-fluid" alt="..." loading='lazy' />
-                                    <div className="card-body">
-                                        <h5 className="card-title">
-                                            Angle Broom - 64"
-                                        </h5>
-                                        <p className="card-text">
-                                            Dirt, dried mud, light snow and other debris are quickly and efficiently swept away with this hydraulically driven attachment.
-                                        </p>
-                                        <a href="#" className=" d-flex justify-content-start align-items-center btn-learn btn">Learn More <i
-                                            className="fa-solid ps-1 fa-right-long"></i></a>
+
+
+                                :
+
+
+                                ProductAttachments.map((item, index) => (
+
+                                    <div className="col mb-3" key={index}>
+                                        <a href="" className="text-decoration-none " >
+                                            <div className="card h-100" data-aos="fade-down">
+                                                <img
+                                                    src={item.image}
+                                                    className="img-fluid" alt="..." loading='lazy'  />
+
+                                                <div className="card-body">
+                                                    <h5 className="card-title">
+                                                       {item.name}
+                                                    </h5>
+                                                    {/* <p className="card-text">
+                                                        Dirt, dried mud, light snow and other debris are quickly and efficiently swept away with this hydraulically driven attachment.
+                                                    </p> */}
+                                                    <a href="#" className=" d-flex justify-content-start align-items-center btn-learn btn">Learn More <i
+                                                        className="fa-solid ps-1 fa-right-long"></i></a>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col mb-3">
-                            <a href="" className="text-decoration-none " >
-                                <div className="card" data-aos="fade-down">
-                                    <img
-                                        src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1680947781/bobcat-assets/alao-approved/in/products/attachments/images/20230406-bobcat-in-angle-broom"
-                                        className="img-fluid" alt="..." loading='lazy' />
-                                    <div className="card-body">
-                                        <h5 className="card-title">
-                                            Angle Broom - 64"
-                                        </h5>
-                                        <p className="card-text">
-                                            Dirt, dried mud, light snow and other debris are quickly and efficiently swept away with this hydraulically driven attachment.
-                                        </p>
-                                        <a href="#" className=" d-flex justify-content-start align-items-center btn-learn btn">Learn More <i
-                                            className="fa-solid ps-1 fa-right-long"></i></a>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col mb-3">
-                            <a href="" className="text-decoration-none " >
-                                <div className="card" data-aos="fade-down">
-                                    <img
-                                        src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1680947781/bobcat-assets/alao-approved/in/products/attachments/images/20230406-bobcat-in-angle-broom"
-                                        className="img-fluid" alt="..." loading='lazy' />
-                                    <div className="card-body">
-                                        <h5 className="card-title">
-                                            Angle Broom - 64"
-                                        </h5>
-                                        <p className="card-text">
-                                            Dirt, dried mud, light snow and other debris are quickly and efficiently swept away with this hydraulically driven attachment.
-                                        </p>
-                                        <a href="#" className=" d-flex justify-content-start align-items-center btn-learn btn">Learn More <i
-                                            className="fa-solid ps-1 fa-right-long"></i></a>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+
+
+                                ))
+
+                        }
+
+
+
+
+
+
                     </div>
                 </section>
             </main>

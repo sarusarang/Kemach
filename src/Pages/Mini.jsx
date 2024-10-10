@@ -4,14 +4,18 @@ import { Machineries } from '../Hooks/Machineries'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { Link } from 'react-router-dom'
+import { Attachments } from '../Hooks/Attachements'
 
 function Mini() {
 
 
-
     const { data, error, isLoading, isSuccess } = Machineries()
 
+    const { data: attchmentData, isLoading: loading, isSuccess: success } = Attachments()
+
     const [ProductData, SetProductData] = useState([])
+
+    const [ProductAttachments, SetProductAttachments] = useState([])
 
 
 
@@ -19,9 +23,13 @@ function Mini() {
 
         AOS.init()
 
-        if (data && isSuccess) {
+        if (data && isSuccess && attchmentData && success) {
 
             const res = data.filter((item) => (item.category === "Mini_Excavators"))
+
+            const attach = attchmentData.filter((item) => (item.machinery.category === "Mini_Excavators"))
+
+            SetProductAttachments(attach)
 
             SetProductData(res)
         }
@@ -31,6 +39,9 @@ function Mini() {
 
     }, [data, isSuccess])
 
+
+
+    
 
 
 
@@ -145,69 +156,51 @@ function Mini() {
 
 
                 <section className="fork-s1">
+
                     <div className="row row2 gx-4 gx-lg-3 row-cols-1 row-cols-sm-2 row-cols-xl-6 justify-content-center ">
-                        <div className="col mb-3">
-                            <a href="" className="text-decoration-none ">
-                                <div className="card h-100" data-aos="fade-down">
-                                    <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1680947772/bobcat-assets/alao-approved/in/products/attachments/images/20230406-bobcat-in-auger"
-                                        className="img-fluid" alt="..." loading='lazy' />
-                                    <div className="card-body">
-                                        <h5 className="card-title">
-                                            Auger - 15C
-                                        </h5>
-                                        <a href="#" className=" d-flex justify-content-center align-items-center btn ">Learn More <i
-                                            className="fa-solid ps-1 fa-right-long"></i></a>
-                                    </div>
+
+
+
+                        {
+
+                            loading ?
+
+                                <div>
+                                    Loading
                                 </div>
-                            </a>
-                        </div>
-                        <div className="col mb-3">
-                            <a href="" className="text-decoration-none ">
-                                <div className="card h-100" data-aos="fade-down">
-                                    <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1680947772/bobcat-assets/alao-approved/in/products/attachments/images/20230406-bobcat-in-auger"
-                                        className="img-fluid" alt="..." loading='lazy' />
-                                    <div className="card-body">
-                                        <h5 className="card-title">
-                                            Auger - 15H
-                                        </h5>
-                                        <a href="#" className=" d-flex justify-content-center align-items-center btn ">Learn More <i
-                                            className="fa-solid ps-1 fa-right-long"></i></a>
+
+                                :
+
+                                ProductAttachments.map((item, index) => (
+
+
+                                    <div className="col mb-3" key={index}>
+                                        <a href="https://wa.me/+919778412529" target='_blank' className="text-decoration-none ">
+                                            <div className="card h-100" data-aos="fade-down">
+                                                <img src={item.image}
+                                                    className="img-fluid" alt="..." loading='lazy' />
+                                                <div className="card-body">
+                                                    <h5 className="card-title">
+                                                        {item.name}
+                                                    </h5>
+                                                    <a href="https://wa.me/+919778412529" target='_blank' className=" d-flex justify-content-center align-items-center btn ">Learn More <i
+                                                        className="fa-solid ps-1 fa-right-long"></i></a>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col mb-3">
-                            <a href="" className="text-decoration-none ">
-                                <div className="card h-100" data-aos="fade-down">
-                                    <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1680947772/bobcat-assets/alao-approved/in/products/attachments/images/20230406-bobcat-in-auger"
-                                        className="img-fluid" alt="..." loading='lazy' />
-                                    <div className="card-body">
-                                        <h5 className="card-title">
-                                            Auger - 30C
-                                        </h5>
-                                        <a href="#" className=" d-flex justify-content-center align-items-center btn ">Learn More <i
-                                            className="fa-solid ps-1 fa-right-long"></i></a>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col mb-3">
-                            <a href="" className="text-decoration-none ">
-                                <div className="card h-100" data-aos="fade-down">
-                                    <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1680947772/bobcat-assets/alao-approved/in/products/attachments/images/20230406-bobcat-in-auger"
-                                        className="img-fluid" alt="..." loading='lazy' />
-                                    <div className="card-body">
-                                        <h5 className="card-title">
-                                            Auger - 30H
-                                        </h5>
-                                        <a href="#" className=" d-flex justify-content-center align-items-center btn ">Learn More <i
-                                            className="fa-solid ps-1 fa-right-long"></i></a>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+
+
+                                ))
+
+                        }
+
                     </div>
+
+
                 </section>
+
+
             </main>
 
 
