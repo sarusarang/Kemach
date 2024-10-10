@@ -1,9 +1,40 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { Link } from 'react-router-dom'
+import { Machineries } from '../Hooks/Machineries'
 
 function BackHoe() {
 
 
-    window.scrollTo(0, 0)
+    const { data, error, isLoading, isSuccess } = Machineries()
+
+    const [ProductData, SetProductData] = useState([])
+
+
+    useEffect(() => {
+
+        AOS.init()
+
+        if (data && isSuccess) {
+
+            const res = data.filter((item) => (item.category === "Backhoe_Loaders"))
+
+            SetProductData(res)
+        }
+
+
+        window.scrollTo(0, 0)
+
+    }, [data, isSuccess])
+
+
+    console.log(data);
+    
+
+   
+
+
 
     return (
 
@@ -17,6 +48,7 @@ function BackHoe() {
 
             <main className="container" id="ForkLiftD">
                 <section className="fork-s1">
+
                     <div className="row row1">
                         <h1>Backhoe Loaders</h1>
                         <p>
@@ -28,37 +60,88 @@ function BackHoe() {
                         </p>
 
                     </div>
+
+
                     <div className="row">
-                        
+
                         <div className="col-md-12">
-                            <div className="row row2 gx-4 gx-lg-3 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center  py-5 ">
-                                <div className="col mb-3">
-                                    <a href="" className="text-decoration-none ">
-                                        <div className="card h-100" data-aos="fade-down">
-                                            <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1678137923/bobcat-assets/alao-approved/in/products/backhoe-loaders/models/b900/20230306-bobcat-in-bhl-b900-studio"
-                                                className="img-fluid" alt="..." loading='lazy' />
-                                            <div className="card-body">
-                                                <h5 className="card-title">
-                                                    B900 Backhoe Loader
-                                                </h5>
-                                                <p className="card-text">
-                                                    Bobcat B900 offers 3~5% higher maximum digging depth compared to other backhoe
-                                                    loaders in its className.</p>
-                                                <a href="#" className=" d-flex justify-content-center align-items-center btn ">Learn More <i
-                                                    className="fa-solid ps-1 fa-right-long"></i></a>
-                                            </div>
+
+                            <div className="row row2 gx-4 gx-lg-3 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center ">
+
+                                {
+
+
+                                    isLoading ?
+
+                                        <div>
+                                            Loading...?
                                         </div>
-                                    </a>
-                                </div>
+
+                                        :
+
+                                        ProductData.map((item, index) => (
+
+                                            <div className="col mb-3 mt-3" key={index}>
+
+                                                <Link to={`/pro/${item.id}`} className="text-decoration-none ">
+                                                    <div className="card h-100" data-aos="fade-down">
+                                                        <img src={item.image}
+                                                            className="img-fluid" alt="..." loading='lazy' />
+                                                        <div className="card-body">
+                                                            <h5 className="card-title">
+                                                                {item.name}
+                                                            </h5>
+                                                            <p className="card-text" style={{ textAlign: 'justify' }}>
+                                                                {item.sub_description}
+                                                            </p>
+
+                                                            <div className='d-flex justify-content-between w-100'>
+
+                                                                <h6 className='fw-bold'>{item.power ? "Horsepower" : ""}</h6>
+
+                                                                <p>{item.power ? <p>{item.power}hp</p> : ""}</p>
+
+                                                            </div>
+
+
+                                                            <div className='d-flex justify-content-between w-100'>
+
+                                                                <h6 className='fw-bold'>{item.weight ? "Operation Weight" : ""}</h6>
+
+                                                                <p>{item.weight ? <p>{item.weight}kg</p> : ""}</p>
+
+                                                            </div>
+
+                                                            <a href="#" className=" d-flex justify-content-center align-items-center btn ">Learn More <i
+                                                                className="fa-solid ps-1 fa-right-long"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </Link>
+
+                                            </div>
+
+
+                                        ))
+
+                                }
+
                             </div>
+
                         </div>
+
                     </div>
+
+
                 </section>
+
+
                 <section className="fork-s2">
                     <div className="row seperation" data-aos="fade-up">
                         <h1>Attachments</h1>
                     </div>
                 </section>
+
+
                 <section className="fork-s1">
                     <div className="row row2 gx-4 gx-lg-3 row-cols-1 row-cols-sm-2 row-cols-xl-6 justify-content-center ">
                         <div className="col mb-3">
@@ -70,7 +153,7 @@ function BackHoe() {
                                         <h5 className="card-title">
                                             Angle Broom - 64"
                                         </h5>
-                                        <a href="#" className=" d-flex justify-content-start align-items-center ">Learn More <i
+                                        <a href="#" className=" d-flex justify-content-start align-items-center btn btn-learn">Learn More <i
                                             className="fa-solid ps-1 fa-right-long"></i></a>
                                     </div>
                                 </div>
@@ -85,7 +168,7 @@ function BackHoe() {
                                         <h5 className="card-title">
                                             Angle Broom - 64"
                                         </h5>
-                                        <a href="#" className=" d-flex justify-content-start align-items-center ">Learn More <i
+                                        <a href="#" className=" d-flex justify-content-start align-items-center btn btn-learn">Learn More <i
                                             className="fa-solid ps-1 fa-right-long"></i></a>
                                     </div>
                                 </div>
@@ -100,7 +183,7 @@ function BackHoe() {
                                         <h5 className="card-title">
                                             Angle Broom - 64"
                                         </h5>
-                                        <a href="#" className=" d-flex justify-content-start align-items-center ">Learn More <i
+                                        <a href="#" className=" d-flex justify-content-start align-items-center btn btn-learn">Learn More <i
                                             className="fa-solid ps-1 fa-right-long"></i></a>
                                     </div>
                                 </div>
@@ -115,7 +198,7 @@ function BackHoe() {
                                         <h5 className="card-title">
                                             Angle Broom - 64"
                                         </h5>
-                                        <a href="#" className=" d-flex justify-content-start align-items-center ">Learn More <i
+                                        <a href="#" className=" d-flex justify-content-start align-items-center btn btn-learn">Learn More <i
                                             className="fa-solid ps-1 fa-right-long"></i></a>
                                     </div>
                                 </div>

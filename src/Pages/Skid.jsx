@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { useEffect } from 'react'
+import React, { useState,useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { Link } from 'react-router-dom'
@@ -36,6 +35,8 @@ export default function Skid() {
 
 
 
+   
+    
 
 
 
@@ -97,9 +98,27 @@ export default function Skid() {
                                                             <h5 className="card-title">
                                                                 {item.name}
                                                             </h5>
-                                                            <p className="card-text" style={{textAlign:'justify'}}>
-                                                                {item.description}
+                                                            <p className="card-text" style={{ textAlign: 'justify' }}>
+                                                                {item.sub_description}
                                                             </p>
+
+                                                            <div className='d-flex justify-content-between w-100'>
+
+                                                                <h6 className='fw-bold'>{item.power ? "Horsepower" : ""}</h6>
+
+                                                                <p>{item.power ? <p>{item.power}hp</p> : ""}</p>
+
+                                                            </div>
+
+
+                                                            <div className='d-flex justify-content-between w-100'>
+
+                                                                <h6 className='fw-bold'>{item.weight ? "Operation Weight" : ""}</h6>
+
+                                                                <p>{item.weight ? <p>{item.weight}kg</p> : ""}</p>
+
+                                                            </div>
+
                                                             <a href="#" className=" d-flex justify-content-center align-items-center btn ">Learn More <i
                                                                 className="fa-solid ps-1 fa-right-long"></i></a>
                                                         </div>

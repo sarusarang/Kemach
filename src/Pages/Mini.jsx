@@ -8,9 +8,6 @@ import { Link } from 'react-router-dom'
 function Mini() {
 
 
-    window.scrollTo(0, 0)
-
-
 
     const { data, error, isLoading, isSuccess } = Machineries()
 
@@ -34,8 +31,6 @@ function Mini() {
 
     }, [data, isSuccess])
 
-
-    console.log(data);
 
 
 
@@ -83,23 +78,48 @@ function Mini() {
                                         ProductData.map((item, index) => (
 
                                             <div className="col mb-3" key={index}>
+
                                                 <Link to={`/pro/${item.id}`} className="text-decoration-none ">
+
                                                     <div className="card h-100" data-aos="fade-down">
-                                                        <img src={item.image}
-                                                            className="img-fluid" alt="..." loading='lazy' />
+
+                                                        <img src={item.image} className="img-fluid" alt="..." loading='lazy' />
+
                                                         <div className="card-body">
+
                                                             <h5 className="card-title">
                                                                 {item.name}
                                                             </h5>
+
                                                             <p className="card-text" style={{ textAlign: 'justify' }}>
-                                                                {item.description}
+                                                                {item.sub_description}
                                                             </p>
+
+                                                            <div className='d-flex justify-content-between w-100'>
+
+                                                                <h6 className='fw-bold'>{item.power ? "Horsepower" : ""}</h6>
+
+                                                                <p>{item.power ? <p>{item.power}hp</p> : ""}</p>
+
+                                                            </div>
+
+
+                                                            <div className='d-flex justify-content-between w-100'>
+
+                                                                <h6 className='fw-bold'>{item.weight ? "Operation Weight" : ""}</h6>
+
+                                                                <p>{item.weight ? <p>{item.weight}kg</p> : ""}</p>
+
+                                                            </div>
 
                                                             <a href="#" className=" d-flex justify-content-center align-items-center btn ">Learn More <i
                                                                 className="fa-solid ps-1 fa-right-long"></i></a>
+
                                                         </div>
                                                     </div>
+
                                                 </Link>
+
                                             </div>
 
                                         ))
