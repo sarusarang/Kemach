@@ -59,7 +59,6 @@ function HomeSlider() {
 
                                         <Col md={12} className="ps-0">
 
-
                                             <div>
 
                                                 <img
@@ -81,7 +80,6 @@ function HomeSlider() {
                                             }} className='typing-animation'>
                                                 {Item.caption}
                                             </div>
-
 
 
                                         </Col>

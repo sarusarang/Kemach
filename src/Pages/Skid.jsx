@@ -15,8 +15,10 @@ export default function Skid() {
     const [ProductData, SetProductData] = useState([])
 
 
-    
 
+
+
+    console.log(data)
 
 
 
@@ -71,104 +73,58 @@ export default function Skid() {
 
                     <div className="row">
 
-                        
+
 
 
                         <div className="col-md-12">
 
                             <div className="row row2 gx-4 gx-lg-3 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center ">
 
-                                <div className="col mb-3">
+                                {
 
-                                    <Link to={'/pro/1'} className="text-decoration-none ">
-                                        <div className="card h-100" data-aos="fade-down">
-                                            <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1670594055/bobcat-assets/alao-approved/in/products/skid-steer-loaders/models/s70/20221209-in-s70-studio"
-                                                className="img-fluid" alt="..." loading='lazy' />
-                                            <div className="card-body">
-                                                <h5 className="card-title">
-                                                    S70 Skid-Steer Loader
-                                                </h5>
-                                                <p className="card-text">
-                                                    The Bobcat® S70 Skid-Steer Loader is the machine for small spaces.
-                                                </p>
-                                                <a href="#" className=" d-flex justify-content-center align-items-center btn ">Learn More <i
-                                                    className="fa-solid ps-1 fa-right-long"></i></a>
-                                            </div>
+
+                                    isLoading ?
+
+                                        <div>
+                                            Loading...?
                                         </div>
-                                    </Link>
 
-                                </div>
+                                        :
 
+                                        ProductData.map((item, index) => (
 
-                                <div className="col mb-3">
+                                            <div className="col mb-3 mt-3" key={index}>
 
-                                    <Link to={'/pro/1'} className="text-decoration-none ">
-                                        <div className="card h-100" data-aos="fade-down">
-                                            <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_640/v1670594102/bobcat-assets/alao-approved/in/products/skid-steer-loaders/models/s450/20221209-in-s450-studio"
-                                                className="img-fluid" alt="..." loading='lazy' />
-                                            <div className="card-body">
-                                                <h5 className="card-title">
-                                                    S450 Skid-Steer Loader
-                                                </h5>
-                                                <p className="card-text">
-                                                    This Bobcat® S450 is our most versatile skid-steer loader - the perfect machine for all your loading, carrying and cleaning jobs.
-                                                </p>
-                                                <a href="#" className=" d-flex justify-content-center align-items-center btn ">Learn More <i
-                                                    className="fa-solid ps-1 fa-right-long"></i></a>
+                                                <Link to={'/pro/1'} className="text-decoration-none ">
+                                                    <div className="card h-100" data-aos="fade-down">
+                                                        <img src={item.image}
+                                                            className="img-fluid" alt="..." loading='lazy' />
+                                                        <div className="card-body">
+                                                            <h5 className="card-title">
+                                                                {item.name}
+                                                            </h5>
+                                                            <p className="card-text" style={{textAlign:'justify'}}>
+                                                                {item.description}
+                                                            </p>
+                                                            <a href="#" className=" d-flex justify-content-center align-items-center btn ">Learn More <i
+                                                                className="fa-solid ps-1 fa-right-long"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </Link>
+
                                             </div>
-                                        </div>
-                                    </Link>
 
 
-                                </div>
+                                        ))
 
-
-                                <div className="col mb-3">
-                                    <Link to={'/pro/1'} className="text-decoration-none ">
-                                        <div className="card h-100" data-aos="fade-down">
-                                            <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1670594156/bobcat-assets/alao-approved/in/products/skid-steer-loaders/models/s590/20221209-in-s590-studio"
-                                                className="img-fluid" alt="..." loading='lazy' />
-                                            <div className="card-body">
-                                                <h5 className="card-title">
-                                                    S590 Skid-Steer Loader
-                                                </h5>
-                                                <p className="card-text">
-                                                    The Bobcat® S590 Skid-Steer Loader is our highest-lifting and most powerful 500 model.
-                                                </p>
-                                                <a href="#" className=" d-flex justify-content-center align-items-center btn ">Learn More <i
-                                                    className="fa-solid ps-1 fa-right-long"></i></a>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
-
-
-                                <div className="col mb-3">
-                                    <Link to={'/pro/1'} className="text-decoration-none ">
-                                        <div className="card h-100" data-aos="fade-down">
-                                            <img src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_480/v1670594215/bobcat-assets/alao-approved/in/products/skid-steer-loaders/models/s770/20221209-in-s770-studio"
-                                                className="img-fluid" alt="..." loading='lazy' />
-                                            <div className="card-body">
-                                                <h5 className="card-title">
-                                                    S770 Skid-Steer Loader
-                                                </h5>
-                                                <p className="card-text">
-                                                    The S770 is built for big jobs and powerful attachment performance.
-                                                </p>
-                                                <a href="#" className=" d-flex justify-content-center align-items-center btn ">Learn More <i
-                                                    className="fa-solid ps-1 fa-right-long"></i></a>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
-
+                                }
 
                             </div>
                         </div>
                     </div>
                 </section>
 
-                
+
                 <section className="fork-s2">
                     <div className="row seperation" data-aos="fade-up">
                         <h1>Attachments</h1>
