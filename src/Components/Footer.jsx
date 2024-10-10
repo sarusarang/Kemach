@@ -38,11 +38,10 @@ function Footer() {
                             <li><a className='text-white'>Kemach Equipments Pvt Ltd</a></li>
                             <li><a className='text-white' >15/340A, Swalih Plaza,Karikkode,</a></li>
                             <li><a className='text-white'>Okkal Post, Ernakulam – 683550</a></li>
-                            <li><a  href="https://wa.me/+919778412529" target='_blank'>Phone / WhatsApp: +91 9778412529</a></li>
+                            <li><a href="https://wa.me/+919778412529" target='_blank'> WhatsApp: +91 9778412529</a></li>
                             <li><a href="mailto:info@kemach.in" target='_blank'>Email Id: info@kemach.in </a></li>
                             
                         </ul>
-
 
 
                     </div>

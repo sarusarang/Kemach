@@ -61,7 +61,8 @@ function Locator() {
                                     Okkal Post, Ernakulam – 683550
                                 </a> <br />
                                 <a href="tel:9342944900" className="card-text text-decoration-none">
-                                    <strong>Contact No:</strong> +91 93429 44900
+                                    <strong>Contact No:</strong>  +91 8943340266
+
                                 </a>
                             </div>
                         </div>
@@ -91,7 +92,7 @@ function Locator() {
                                     Ramanattukara, Calicut - 673633.
                                 </a> <br />
                                 <a href="tel:8943340268" className="card-text text-decoration-none">
-                                    <strong>Contact No:</strong> +91 89433 40268
+                                    <strong>Contact No:</strong> +91 9342944896 
                                 </a>
                             </div>
                         </div>

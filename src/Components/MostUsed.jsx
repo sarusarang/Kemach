@@ -60,7 +60,7 @@ function MostUsed() {
                             </h3> */}
 
                             <p data-aos="zoom-in-up">
-                                The second-generation transition in the business not only brings a captivating blend of
+                                Our second-generation transition in the business not only brings a captivating blend of
                                 continuity and fresh perspectives, emphasizing our familial roots and a profound understanding
                                 of core strengths but also introduces an enhanced knowledge base in the field. This added
                                 expertise notches up our ability to propel the business forward with greater ease, creating a
@@ -131,7 +131,7 @@ function MostUsed() {
 
                         </div>
 
-                        <div className="col mb-3" data-aos="fade-up" style={{cursor:'pointer'}} onClick={()=>{Navigate('/service')}}>
+                        <div className="col mb-3" data-aos="fade-up" style={{ cursor: 'pointer' }} onClick={() => { Navigate('/service') }}>
 
                             <Carousel id="carouselExampleIndicatorsCard1" className='border shadow' interval={3000} controls={false} indicators={false}>
 
@@ -177,7 +177,7 @@ function MostUsed() {
 
 
 
-                <section className="s5 py-3">
+                <section className="s5 py-3 mb-5">
 
                     <div className="row">
 
@@ -186,23 +186,27 @@ function MostUsed() {
                             <h3 data-aos="fade-up">The Kemach</h3>
                             <p data-aos="fade-down" style={{ textAlign: 'justify' }}>
 
-                                Kemach has been a trusted dealer of Bobcat heavy earth-moving equipment for the past 18 years, serving both Kerala and Tamil Nadu with a strong commitment to quality and customer satisfaction. The company offers a wide range of Bobcat machinery, including loaders, excavators, skid steer loaders, mini excavators, backhoe loaders, and compact equipment, catering to various construction, agricultural, and industrial needs. <br /> <br />
 
-                                In addition to sales, Kemach provides comprehensive service-related solutions, ensuring top-notch maintenance, repairs, and support throughout the lifecycle of their equipment.Their service commitment extends to both preventive care and timely repairs, helping customers maximize the performance and longevity of their machines.
+                                Kemach has been a trusted dealer of Bobcat Compact Equipments and construction Industry for the past 18 years, serving both Kerala and Tamil Nadu with a strong commitment to quality and customer satisfaction. As a leading provider in the industry, Kemach offers a wide range of Bobcat Compact Machinery, including Skid Steer loaders, Mini Excavators, Backhoe Loaders, and Rock Breakers, Compressors (Engine Drive – Electric) for catering to various construction, agricultural, and industrial needs. In addition to sales, Kemach provides comprehensive service-related solutions, ensuring that their customers receive top-notch maintenance, repairs, and support throughout the lifecycle of their equipment. <br /> <br />
 
-                                Kemach is led by KP Velumani, the Managing Director with over 30 years of expertise in the construction equipment industry. His leadership has been instrumental in establishing Kemach as a major player in the Kerala and Tamil Nadu markets.
+                                KP Velumani is a highly accomplished leader with over 30 years of expertise in the construction equipment industry. With a robust presence in the Kerala market for the past 15 years, he has consistently demonstrated a deep understanding of market trends and customer needs. A graduate with a strong technical background, he began his career in the Product Support Department at ELGI Equipments Ltd, where he specialized in Rotary Screw Compressors for a decade (1986-1996). <br /> <br />
 
-                                Velumani’s journey began in the Product Support Department at ELGI Equipments Ltd, where he spent a decade specializing in Rotary Screw Compressors. His career evolved as Director of Ramsive Pneumatics and Marwell Enncon Tech, where he achieved significant growth and operational efficiency.
+                                Velumani's leadership track record includes serving as Director of Ramsive Pneumatics Pvt Ltd and Marwell Enncon Tech Pvt Ltd, where he drove significant growth and operational efficiency. Currently, as the Managing Director of Kemach Equipments, a trusted dealer for Bobcat and Indus Rock, he continues to steer the company towards innovation and excellence. His visionary leadership, coupled with a commitment to delivering high-quality solutions, makes him a driving force in the industry and a valuable asset to any enterprise. <br /> 
 
-                                Under his visionary leadership, Kemach continues to innovate and deliver high-quality solutions, making it a go-to provider for Bobcat equipment and Indus Rock Breakers in the region.                </p>
+
+
+                            </p>
 
                         </div>
 
                         <div className="col-md-4 d-flex flex-column align-content-center justify-content-center">
-                            <img src="/IMG_7717.png" width="100%" alt="" />
+
+                            <img src="/IMG_7717.png" width="100%" alt="img" loading='lazy' />
+
                             <div className="img-box">
                                 <p>K.P Velumani (Managing Director) </p>
                             </div>
+
                         </div>
 
 

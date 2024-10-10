@@ -22,14 +22,6 @@ function HomeSlider() {
         }
 
     }, [data, isSuccess])
-
-
-
-
-
-
-
-    console.log(data);
     
 
 
@@ -87,8 +79,6 @@ function HomeSlider() {
                             ))
 
                     }
-
-
 
 
                 </Carousel>

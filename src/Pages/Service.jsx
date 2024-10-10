@@ -41,7 +41,7 @@ function Service() {
                     </div>
 
                     <div className="row service" data-aos="fade-down">
-                        <p>we pride ourselves on delivering high-quality products and services with a strong focus on reliability and
+                        <p>We pride ourselves on delivering high-quality products and services with a strong focus on reliability and
                             precision. Our commitment to excellence ensures that every solution we provide meets the highest industry
                             standards, while our emphasis on timely delivery keeps your operations running smoothly and efficiently.
                         </p>
