@@ -9,7 +9,7 @@ function HomeSlider() {
     const [SliderData, SetSliderData] = useState([])
 
 
-    const { data, isLoading, isSuccess, isError } = Slider()
+    const { data, isLoading, isSuccess } = Slider()
 
 
 
@@ -22,7 +22,11 @@ function HomeSlider() {
         }
 
     }, [data, isSuccess])
-    
+
+
+   
+   
+
 
 
     return (
@@ -67,7 +71,18 @@ function HomeSlider() {
 
                                             </div>
 
-                                           
+                                            <div style={{
+                                                position: 'absolute',
+                                                top: '30%',
+                                                left: '3%',
+                                                color: 'white',
+                                                textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)',
+                                                fontSize: '2.1rem'
+                                            }} className='typing-animation'>
+                                                {Item.caption}
+                                            </div>
+
+
 
                                         </Col>
 
