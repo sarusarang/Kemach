@@ -11,7 +11,7 @@ body {
   /* font-family: "Geologica", sans-serif; */
   /* font-family: 'Lora', serif; */
   /* font-family: 'Nunito', sans-serif; */
-  font-family: 'Afacad Flux', sans-serif;
+  font-family: 'Afacad Flux', sans-serif !important;
 }
 
 ::selection {
@@ -109,6 +109,10 @@ li {
 
   .top-header .sub-div .left-side ul li a {
     font-size: 8px;
+  }
+
+  .top-header .sub-div .left-side ul {
+    gap: 8px;
   }
 
 }

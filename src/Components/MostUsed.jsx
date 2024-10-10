@@ -112,7 +112,7 @@ function MostUsed() {
 
                 <section className="s4">
 
-                    <h3 class="pt-1 text-center text-capitalize fw-bold h5">The Most delivered equipments</h3>
+                    <h3 class="pt-1 text-center text-capitalize fw-bold h6">The Most delivered equipments</h3>
 
                     <div className="row gx-4 gx-lg-3 row-cols-1 row-cols-sm-2 row-cols-xl-2 justify-content-center container">
 
