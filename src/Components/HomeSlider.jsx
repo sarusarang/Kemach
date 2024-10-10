@@ -236,14 +236,14 @@ function HomeSlider() {
                         </div>
 
 
-                        <div style={{backgroundImage:'url("/Baner1.jpg")'}} className="carousel-item active">
+                        <div style={{backgroundImage:'url("/Baner11.jpg")'}} className="carousel-item active">
                             <div className="carousel-caption d-block fade-up ">
                                 <h4 className="fw-bolder" data-aos="fade-up">When the ground needs moving,
                                     we’ve got the power to get it done</h4>
                             </div>
                         </div>
 
-                        <div style={{backgroundImage:'url("/Baner2.jpg")'}}  className="carousel-item">
+                        <div style={{backgroundImage:'url("/Baner21.jpg")'}}  className="carousel-item">
                             <div className="carousel-caption d-block fade-up">
                                 <h4 className="fw-bolder">Transform your worksite with
                                     force of our heavy-duty machines</h4>
